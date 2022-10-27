@@ -22,6 +22,8 @@ body {
 }
 .boton-inicio{
     font-family: Creepster;
+    display: flex;
+    flex-direction: column;
     color: black;
     text-decoration-color: black;
     border-color: red;
@@ -107,3 +109,4 @@ margin-top: 0;
     margin-left: 4.5rem;
     font-size: 2rem;
 }
+
