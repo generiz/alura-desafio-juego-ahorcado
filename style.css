@@ -1,0 +1,109 @@
+body {
+    background: url(imagenes/background-terror.jpg)no-repeat;
+    width: 100%;
+    background-size: cover;
+    font-family: Creepster;
+    display: flex;
+    
+    
+
+}
+.logo{
+    margin-left: 1rem;
+    border-image-width: 0%;
+}
+.titulo{
+
+    font-size: 2rem;
+    color: red;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 0px;
+}
+.boton-inicio{
+    font-family: Creepster;
+    color: black;
+    text-decoration-color: black;
+    border-color: red;
+    background: none;
+    border-radius: 5%;
+    font-size: 2rem;
+    align-items: center;
+    padding: auto;
+    margin-top: 15%;
+
+}
+
+#pantalla {
+    width: 960px;
+    height: 450px;
+}
+
+#boton {
+    font-family: Creepster;
+    color: red;
+}
+
+#juegoAparece {
+    display: none;
+}
+
+#pantalla {
+margin-top: 0; 
+
+}
+
+#inicioDesaparece {
+    margin-left: 30%;
+    align-items: center;
+}
+
+
+.juego {
+
+    margin-left: 30%;
+
+}
+
+.tituloAhorcado {
+    font-size: 2rem;
+    color: red;
+    padding-left: 3rem;
+}
+
+#pista {
+    font-size: 2rem;
+    color: red;
+    padding-left: 0;
+    margin-bottom: 0;
+
+}
+
+#final {
+    display: none;
+    font-size: 2rem;
+    color: red;
+    padding-left: 3rem;
+    margin-bottom: 0;
+
+}
+#final1 {
+    display: none;
+    font-size: 2rem;
+    color: red;
+    padding-left: 3rem;
+    margin-bottom: 0;
+
+}
+#intento{
+    color: red;
+    margin-left: 2rem;
+    font-size: 3rem;
+    margin: 3%;
+}
+.intentos{
+    display: flex;
+    padding: auto;
+    margin-left: 4.5rem;
+    font-size: 2rem;
+}

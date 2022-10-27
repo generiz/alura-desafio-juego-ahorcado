@@ -5,14 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ahorcado</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="ahorcado.js"></script>
+
 </head>
+<header>
+    <img src="imagenes/logo.svg" class="logo" onclick="javascript:window.location.reload();">
+</header>
 
 <body>
-    <img src="imagenes/logo.svg" class="logo">
-    <div class="boton-home">
-        
-           <input class="boton-iniciar" type="submit" value="Iniciar Juego" id="iniciar-juego" onclick="iniciarJuego()">
-        </a>
+    <div id="inicioDesaparece">
+        <p class="titulo">Juego del ahorcado, ingresa bajo tu propio riesgo</p>
+
+
+        <input class="boton-inicio" type="submit" value="Te atreves a inicar el Juego?" id="iniciar-juego"
+            onclick="iniciarJuego()">
+
+
+    </div>
+    <div id="juegoAparece">
+        <div class="juego">
+
+            <p class="tituloAhorcado">Juego del Ahorcado</p>
+            <p>
+                Elige una letra:
+                <input type="text" maxlength="1" id="letra" />
+                <input type="button" id="boton" value="Intentalo!!" />
+            </p>
+            <div class="intentos">
+                <p>Intentos restantes </p>
+                <p id="intento">5</p>
+                
+            </div>
+            <h2 id="pista">_ _ _</h2>
+        </div>
+        <canvas id="pantalla"></canvas>
+        <script type="text/javascript">
+            iniciar();
+        </script>
+    </div>
+    <div id="final">
+        <p id="mensajeFinal"></p>
+
+
+        <input class="boton-inicio" type="submit" value="Volver a jugar?" id="iniciar-juego" onclick="javascript:window.location.reload();">
+    </div>
+    <div id="final1">
+        <p id="mensajeFinal1"></p>
+
+
+        <input class="boton-inicio" type="submit" value="Volver a jugar?" id="iniciar-juego" onclick="javascript:window.location.reload();">
+    </div>
+
 
 </body>
 
